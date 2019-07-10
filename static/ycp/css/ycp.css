@@ -1,0 +1,195 @@
+/******************************************************
+* #### jQuery-Youtube-Channels-Playlist v06 ####
+* Coded by Ican Bachors 2014.
+* https://github.com/bachors/jQuery-Youtube-Channels-Playlist
+* Updates will be posted to this site.
+******************************************************/
+
+.ycp {
+    text-align: left;
+	font-size: 1em;
+	color: #0a1a42;
+	background: #0a1a42;
+	display: block;
+	width: 100%;
+	height: 369px;
+}
+
+
+.ycp,
+.ycp .belah {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+.ycp .belah {
+	display: inline-block;
+	vertical-align: top;
+	height: 100%;
+}
+
+.ycp .belah:first-of-type {
+	width: calc(100% - 104px);
+}
+
+.ycp .belah:last-of-type {
+	width: 104px;
+}
+
+.ycp .belah .luhur {
+	width: 100%;
+	height: 70px;
+	box-sizing: border-box;
+	padding: 10px;
+	margin: 0;
+
+	display: none;
+	visibility: hidden;
+}
+
+.ycp .belah .handap {
+	height: 100%;
+	padding: 0;
+	overflow-y: auto;
+    background: #fff0f7;
+}
+
+.ycp .belah .handap,
+.ycp .belah .bingkay {
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+	margin: 0;
+}
+
+.ycp .belah .bingkay {
+	height: 100%;
+	border: 0;
+}
+
+.ycp .belah .luhur span.tombol {
+	margin-right: 20px;
+}
+
+.ycp .belah .luhur span.about {
+	float: right;
+	padding: 2px;
+	border-radius: 50%;
+	width: 20px;
+	height: 20px;
+	text-align: center;
+}
+
+.ycp a {
+	text-decoration: none;
+	outline: 0;
+}
+
+.ycp a img {
+	border: 0;
+}
+
+.ycp .belah.ycp_vid_play {
+	cursor: pointer;
+}
+
+.ycp .belah.ycp_vid_play a {
+	background: #e52d27;
+	width: 120px;
+	height: 75px;
+	display: block;
+	border-radius: 10%;
+	position: relative;
+	top: calc(50% - 35px);
+	left: calc(50% - 60px);
+	text-align: center;
+}
+
+.ycp .belah.ycp_vid_play a::before {
+	content: "\25B6";
+	z-index: 100;
+	font-size: 50px;
+}
+
+.ycp .belah .thumb {
+	float: left;
+	position: relative;
+    padding: 0;
+    margin: 0 10px 0 0;
+}
+
+.ycp .belah .thumb span {
+	position: absolute;
+	font-size: .8em;
+    display: none;
+    visibility: hidden;
+}
+
+.ycp .belah .play {
+	margin: 0;
+	padding: 5px 0 5px 10px;
+	display: block;
+	overflow: hidden;
+	*overflow: visible;
+}
+
+.ycp .belah .luhur div.title {
+	padding-bottom: 5px;
+	margin-bottom: 5px;
+}
+
+.ycp .belah .handap div.title {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+    font-size: 14px;
+}
+
+.ycp .belah span.mute,
+.ycp .belah span.about a {
+	font-size: .8em;
+
+    display: none;
+    visibility: hidden;
+}
+
+.ycp .belah .thumb img {
+	width: 80px;
+    height: 60px;
+	border: 2px solid #000;
+    background: #0a1a42;
+}
+
+.ycp .belah .play:hover,
+.ycp .belah .vid-active {
+    color: #fad5e5;
+    background: #0a1a42;
+}
+
+.ycp .belah .luhur .vid-prev,
+.ycp .belah .luhur .vid-next,
+.ycp .belah .play {
+	cursor: pointer;
+}
+
+@media screen and (max-width:800px) {
+	.ycp {
+		height: 1000px;
+	}
+
+	.ycp .belah,
+	.ycp .belah:first-of-type,
+	.ycp .belah:last-of-type {
+		width: 100%;
+		display: block;
+	}
+
+	.ycp .belah:first-of-type {
+		height: 40%;
+	}
+
+	.ycp .belah:last-of-type {
+		height: 60%;
+	}
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>...</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+
+    <link type="text/css" rel="stylesheet" href="css/ycp.css" />
+
+</head>
+<body>
+
+<div class="flex-vid">
+
+    <div class="ea-playlist" data-ycp_title="Electro Alternativ #14" data-ycp_channel="PLbC30u9egvpBAXK74A9U4HeTr3q4ig6Go"></div> <!-- By PlayListId -->
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="js/ycp.js"></script>
+
+<script>
+    $(function() {
+        $(".ea-playlist").ycp({
+            apikey : 'AIzaSyBMRyIdlgyAKIoKe9ptUZgejHZQB3RWumY',
+            playlist : 50,
+            autoplay : true,
+            related : false
+        });
+    });
+</script>
+
+</body>
+</html>

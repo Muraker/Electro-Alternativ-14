@@ -1,0 +1,62 @@
+.pace {
+  pointer-events: none;
+  user-select: none;
+  z-index: 99;
+
+  //transition-delay: 1s;
+  transition: opacity 0.3s ease;
+
+  //transform: translateY(-90%);
+
+  width: 40px;
+  height: 60px;
+
+  position: fixed;
+
+  top: 0;
+  left: 0;
+
+  background-color: #fad5e5;
+  background: linear-gradient(to top, rgba(250,213,229,0) 0%, #fad5e5 50%, #fad5e5 100%);
+
+}
+
+.pace-done .pace {
+  opacity: 0;
+  //transform: translateY(-100%);
+}
+
+.pace-running .pace {
+  opacity: 1;
+  //transform: translateY(0%);
+}
+
+.pace-active {
+  //opacity: 1;
+}
+
+.pace-inactive {
+  //opacity: 0.6;
+}
+
+.pace .pace-activity {
+  display: block;
+  position: fixed;
+
+  z-index: 99;
+
+  top: 15px;
+  left: 15px;
+  width: 8px;
+  height: 8px;
+  border: solid 2px transparent;
+  border-top-color: #0a1a42;
+  border-left-color: #0a1a42;
+  border-radius: 20px;
+  animation: pace-spinner 400ms linear infinite;
+}
+
+@keyframes pace-spinner {
+  0% { transform: rotate(0deg); transform: rotate(0deg); }
+  100% { transform: rotate(360deg); transform: rotate(360deg); }
+}

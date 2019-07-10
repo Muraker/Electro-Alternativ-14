@@ -1,0 +1,61 @@
+.pace {
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  z-index: 99;
+  -webkit-transition: opacity 0.3s ease;
+  -o-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+  width: 40px;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fad5e5;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(250, 213, 229, 0)), color-stop(50%, #fad5e5), to(#fad5e5));
+  background: -webkit-linear-gradient(bottom, rgba(250, 213, 229, 0) 0%, #fad5e5 50%, #fad5e5 100%);
+  background: -o-linear-gradient(bottom, rgba(250, 213, 229, 0) 0%, #fad5e5 50%, #fad5e5 100%);
+  background: linear-gradient(to top, rgba(250, 213, 229, 0) 0%, #fad5e5 50%, #fad5e5 100%); }
+
+.pace-done .pace {
+  opacity: 0; }
+
+.pace-running .pace {
+  opacity: 1; }
+
+.pace .pace-activity {
+  display: block;
+  position: fixed;
+  z-index: 99;
+  top: 15px;
+  left: 15px;
+  width: 8px;
+  height: 8px;
+  border: solid 2px transparent;
+  border-top-color: #0a1a42;
+  border-left-color: #0a1a42;
+  border-radius: 20px;
+  -webkit-animation: pace-spinner 400ms linear infinite;
+  animation: pace-spinner 400ms linear infinite; }
+
+@-webkit-keyframes pace-spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+@keyframes pace-spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    transform: rotate(360deg); } }

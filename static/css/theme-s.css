@@ -1,0 +1,12 @@
+.event-block.day,
+.event-block.night {
+  opacity: 0.3;
+  -webkit-transform: scale(0.5, 1);
+  -ms-transform: scale(0.5, 1);
+  transform: scale(0.5, 1); }
+
+#eventA {
+  opacity: 0.3; }
+
+#eventS {
+  text-decoration: underline; }
